@@ -53,3 +53,84 @@
     height: 100%;
     width: 15%;
 }
+nav ul{
+    width: 100%;
+    list-style: none;
+}
+nav ul li{
+    line-height: 50px;
+    border-bottom: 2px solid gray;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5%;
+    width: 100%;
+    display: block;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+nav ul li a:hover{
+    color: lightslategray;
+    font-size: 26px;
+    background-color: #1e1e1e;
+    border-left-color:lightslategray;
+    border-right-color:lightslategray;
+    width: 100%;
+}
+.socialdiv{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fb{
+    width: 250px;
+    height: 155px;
+    float: left;
+
+}
+.fb:hover{
+    background-color: #4668b3;
+}
+.yt{
+    width: 250px;
+    height: 155px;
+    float: left;
+
+}
+.yt:hover{
+    background-color: #d94348;
+}
+.tw{
+    width: 250px;
+    height: 155px;
+    float: left;
+
+}
+.tw:hover{
+    background-color: #6441a5;
+}
+.am{
+    width: 250px;
+    height: 155px;
+    float: left;
+
+}
+.am:hover{
+    background-color: #e47911;
+}
+.social{
+    width: 100%;
+    text-align: center;
+    background-color: #292929;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer{
+    text-align: center;
+    background-color: #222222;
+    color: white;
+}
