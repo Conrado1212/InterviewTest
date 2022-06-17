@@ -287,3 +287,11 @@ text-align: center;
     background: linear-gradient(to right, #808080, 	#000000);
    
 }
+.gifek{
+    background: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 200px;
+    display: inline;
+    margin: 1%;
+}
