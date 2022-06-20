@@ -26,3 +26,48 @@ function check(btnId){
         document.getElementById(correct).innerHTML = "Wrong !!!";
     }
 }
+
+function checkSQL(btnId){
+    for(var i=0;i<4;i++){
+        if(document.forms[btnId].elements[i].checked){
+            corJava[btnId]=i;
+        }
+    }
+    block = "correct" + btnId;
+    if(corJava[btnId] == correctJava[btnId]){
+        document.getElementById(correct).style.visibility ="visibile";
+        document.getElementById(correct).innerHTML = "Correct !!!";
+    }else{
+        document.getElementById(correct).innerHTML = "Wrong !!!";
+    }
+}
+function checkSoftware(btnId){
+    for(var i=0;i<4;i++){
+        if(document.forms[btnId].elements[i].checked){
+            corJava[btnId]=i;
+        }
+    }
+    block = "correct" + btnId;
+    if(corJava[btnId] == correctJava[btnId]){
+        document.getElementById(correct).style.visibility ="visibile";
+        document.getElementById(correct).innerHTML = "Correct !!!";
+    }else{
+        document.getElementById(correct).innerHTML = "Wrong !!!";
+    }
+}
+
+
+function checkEnglish(btnId){
+    for(var i=0;i<4;i++){
+        if(document.forms[btnId].elements[i].checked){
+            corJava[btnId]=i;
+        }
+    }
+    block = "correct" + btnId;
+    if(corJava[btnId] == correctJava[btnId]){
+        document.getElementById(correct).style.visibility ="visibile";
+        document.getElementById(correct).innerHTML = "Correct !!!";
+    }else{
+        document.getElementById(correct).innerHTML = "Wrong !!!";
+    }
+}
