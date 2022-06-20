@@ -26,22 +26,63 @@
                 <img class="gifek"src="https://monophy.com/media/xUOxfjsW9fWPqEWouI/monophy.gif" alt=""value="transparent">
             </div>
             
-            <div class="content2"><button type="button" name="submit"  class="submit-btn"><span></span>Click here</button></div>
+            <div class="content2"><button type="button" name="submit" id="start-btn"onclick="start()" class="submit-btn"><span></span>Lets go</button></div>
             
         </div>
-        <div class="question">
-            <h2>Java is __________ language?</h2>
+        <div class="question" id="question0">
+            <h2>1. Java is __________ language?</h2>
             <form action="">
                 <table class="button-box3">
-                    <tr>
-                        <td><input type="radio" class="input-field"  name="q1" value="" id="">Low-level programming</td>
-                        <td><input type="radio"  class="input-field" name="q1" value="" id="">High-level programming</td>
+                    <tr class="active-row">
+                        <td><input type="radio" class="input-field"  name="q1" value="Low-level" id="0">Low-level programming</td>
+                        <td><input type="radio"  class="input-field" name="q1" value="High-level" id="1">High-level programming</td>
                     </tr>
-                    <tr>
-                        <td><input type="radio"  class="input-field" name="q1" value="" id="">not programming</td>
-                        <td><input type="radio"  class="input-field" name="q1" value="" id="">full object oriented programinng </td>
+                    <tr class="active-row">
+                        <td><input type="radio"  class="input-field" name="q1" value="not" id="2">not programming</td>
+                        <td><input type="radio"  class="input-field" name="q1" value="full object oriented" id="3">full object oriented programinng </td>
                     </tr>
                 </table>
+                            <h2 class="TrueOrFalse" id="correct">Correct !!</h2> 
+                            
+                <button type="button" value="submit" class="submit-btn3" id=0 onclick="check(this.id)"> Confirm</button>
+            </form>
+        </div>
+        <div class="question" id="question1">
+            <h2>2. Java is __________ language?</h2>
+            <form action="">
+                <table class="button-box3">
+                    <tr class="active-row">
+                        <td><input type="radio" class="input-field"  name="q2" value="Low-level" id="0">Low-level programming</td>
+                        <td><input type="radio"  class="input-field" name="q2" value="High-level" id="1">High-level programming</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td><input type="radio"  class="input-field" name="q2" value="not" id="2">not programming</td>
+                        <td><input type="radio"  class="input-field" name="q2" value="full object oriented" id="3">full object oriented programinng </td>
+                    </tr>  
+                </table>
+                            <h2 class="TrueOrFalse" id="correct">Correct !!</h2> 
+                            
+                <button type="button" value="submit" class="submit-btn3" id=1 onclick="check(this.id)"> Confirm</button>
+            </form>
+        </div>
+        <div class="question" id="question2">
+            <h2>3. Java is __________ language?</h2>
+            <form action="">
+                <table class="button-box3">
+                    <tr class="active-row">
+                        <td><input type="radio" class="input-field"  name="q3" value="Low-level" id="0">Low-level programming</td>
+                        <td><input type="radio"  class="input-field" name="q3" value="Low-level" id="1">High-level programming</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td><input type="radio"  class="input-field" name="q3" value="Low-level" id="2">not programming</td>
+                        <td><input type="radio"  class="input-field" name="q3" value="Low-level" id="3">full object oriented programinng </td>
+                    </tr>
+                       
+                            
+                       
+                </table>
+                <h2 class="TrueOrFalse" id="correct">Correct !!</h2> 
+                <button type="button" value="submit" class="submit-btn3" id=2 onclick="check(this.id)"> Confirm</button>
             </form>
         </div>
     </div>
