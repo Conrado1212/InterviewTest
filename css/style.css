@@ -297,3 +297,20 @@ text-align: center;
     display: inline;
     margin: 1%;
 }
+.button-box3{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+.question h2{
+    text-align: center;
+}
+.input-field{
+
+}
