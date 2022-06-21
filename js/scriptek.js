@@ -22,6 +22,7 @@ function check(btnId){
     }
     block = "correct" + btnId;
     if(corJava[btnId] == correctJava[btnId]){
+        score++;
         document.getElementById(block).style.visibility ="visible";
         document.getElementById(block).innerHTML = "Correct !!!";
     }else{
@@ -38,7 +39,7 @@ function next(){
     document.getElementById(block).style.visibility = "hidden";
     if(qes == 2){
         document.getElementById(nowQuestion).style.display = "none";
-        score();
+        finalScore();
     }else{
         document.getElementById(nowQuestion).style.display = "none";
         qes++;
@@ -47,3 +48,8 @@ function next(){
     }
 }
 
+
+function finalScore(){
+    document.getElementById("correct").style.display = "block";
+    document.getElementById("correct").innerHTML = "Your scored: " + score + "/3";
+}
