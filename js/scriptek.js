@@ -8,11 +8,13 @@ var qes;
 
 
 function start(){
+    
     document.getElementById("start-btn").style.display ="none";
     document.getElementById("question0").style.display ="block";
 }
 
 function check(btnId){
+    qes = btnId;
     for(var i=0;i<4;i++){
         if(document.forms[btnId].elements[i].checked){
             corJava[btnId]=i;
@@ -20,54 +22,28 @@ function check(btnId){
     }
     block = "correct" + btnId;
     if(corJava[btnId] == correctJava[btnId]){
-        document.getElementById(correct).style.visibility ="visibile";
-        document.getElementById(correct).innerHTML = "Correct !!!";
+        document.getElementById(block).style.visibility ="visible";
+        document.getElementById(block).innerHTML = "Correct !!!";
     }else{
-        document.getElementById(correct).innerHTML = "Wrong !!!";
+        document.getElementById(block).style.visibility ="visible";
+        document.getElementById(block).innerHTML = "Wrong !!!";
+    }
+
+    document.getElementById(btnId).value = "Next";
+    document.getElementById(btnId).setAttribute("onclick","next()");
+}
+
+function next(){
+    var nowQuestion = "question" + qes;
+    document.getElementById(block).style.visibility = "hidden";
+    if(qes == 2){
+        document.getElementById(nowQuestion).style.display = "none";
+        score();
+    }else{
+        document.getElementById(nowQuestion).style.display = "none";
+        qes++;
+        var newQuestion = "question" + qes;
+        document.getElementById(newQuestion).style.display = "block";
     }
 }
 
-function checkSQL(btnId){
-    for(var i=0;i<4;i++){
-        if(document.forms[btnId].elements[i].checked){
-            corJava[btnId]=i;
-        }
-    }
-    block = "correct" + btnId;
-    if(corJava[btnId] == correctJava[btnId]){
-        document.getElementById(correct).style.visibility ="visibile";
-        document.getElementById(correct).innerHTML = "Correct !!!";
-    }else{
-        document.getElementById(correct).innerHTML = "Wrong !!!";
-    }
-}
-function checkSoftware(btnId){
-    for(var i=0;i<4;i++){
-        if(document.forms[btnId].elements[i].checked){
-            corJava[btnId]=i;
-        }
-    }
-    block = "correct" + btnId;
-    if(corJava[btnId] == correctJava[btnId]){
-        document.getElementById(correct).style.visibility ="visibile";
-        document.getElementById(correct).innerHTML = "Correct !!!";
-    }else{
-        document.getElementById(correct).innerHTML = "Wrong !!!";
-    }
-}
-
-
-function checkEnglish(btnId){
-    for(var i=0;i<4;i++){
-        if(document.forms[btnId].elements[i].checked){
-            corJava[btnId]=i;
-        }
-    }
-    block = "correct" + btnId;
-    if(corJava[btnId] == correctJava[btnId]){
-        document.getElementById(correct).style.visibility ="visibile";
-        document.getElementById(correct).innerHTML = "Correct !!!";
-    }else{
-        document.getElementById(correct).innerHTML = "Wrong !!!";
-    }
-}
